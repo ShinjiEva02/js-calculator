@@ -67,21 +67,21 @@ window.addEventListener('DOMContentLoaded', function(){
 		totalValue.value = total;
 	});
 
-	counterBlock.addEventListener('change', () => {
+	counterBlock.addEventListener('input', () => {
 		counterHours.value = '';
 		counterRate.value = '';
 		total = counterBlock.value * blocks;
 		totalValue.value = total;
 	});
 
-	counterPages.addEventListener('change', () => {
+	counterPages.addEventListener('input', () => {
 		counterHours.value = '';
 		counterRate.value = '';
 		total = counterPages.value * pages;
 		totalValue.value = total;
 	});
 
-	counterHours.addEventListener('change', () => {
+	counterHours.addEventListener('input', () => {
 		counterBlock.value = '';
 		counterPages.value = '';
 		total = 0;
@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		total = hourRate; 
 	});
 
-	counterRate.addEventListener('change', () => {
+	counterRate.addEventListener('input', () => {
 		counterBlock.value = '';
 		counterPages.value = '';
 		total = 0;
